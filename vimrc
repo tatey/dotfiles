@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'wincent/Command-T'
 
 filetype plugin indent on
@@ -30,18 +31,22 @@ set nobackup
 set nowb
 set noswapfile
 
-" File manager
-let g:netrw_banner=0    " Disable banner
-let g:netrw_liststyle=3 " Tree
-
 " Bindings
 nnoremap <LEADER>n :n .<CR>  " Open the filer manager at the current working directory.
 nnoremap <ESC> :noh<CR><ESC> " Clear highlights
 
-" Other
+" Window
 syntax enable " Syntax highlighting
 set number    " Show line numbers
 set ruler     " Show cursor position
+
+" File manager
+let g:netrw_banner=0    " Disable banner
+let g:netrw_liststyle=3 " Tree
+
+" Ident Guide
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#e6e6e6 ctermbg=4
 
 " MacVim
 if has("gui_running")
