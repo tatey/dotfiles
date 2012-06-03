@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'wincent/Command-T'
+Bundle 'vim-scripts/upAndDown'
 
 filetype plugin indent on
 
