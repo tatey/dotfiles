@@ -20,10 +20,11 @@ set incsearch  " Makes search act like search in modern browsers
 set hlsearch   " Highlight search results
 
 " Whitespace
-set nowrap       " Do not wrap lines
-set expandtab    " Use spaces instead of tabs
-set smarttab     " Be smart when using tabs ;-)
-set shiftwidth=2 " 1 tab is 2 spaces
+set nowrap        " Do not wrap lines
+set expandtab     " Use spaces instead of tabs
+set smarttab      " Be smart when using tabs ;-)
+set softtabstop=2 " 1 tab is 2 spaces
+set shiftwidth=2
 set tabstop=2
 
 " Disable backup. No swap files.
@@ -32,19 +33,22 @@ set nowb
 set noswapfile
 
 " Bindings
-nnoremap <LEADER>n :n .<CR>  " Open the filer manager at the current working directory.
-nnoremap <ESC> :noh<CR><ESC> " Clear highlights
+nnoremap <LEADER>n :n .<CR>             " Open the filer manager at the current working directory.
+nnoremap <ESC> :noh<CR><ESC>            " Clear highlights
+nmap <leader>l :set list!<CR>           " Toggle list characters (Invisibles)
+nmap <silent> <leader>s :set spell!<CR> " Toggle spell
 
 " Window
-syntax enable " Syntax highlighting
-set number    " Show line numbers
-set ruler     " Show cursor position
+syntax enable       " Syntax highlighting
+set number          " Show line numbers
+set ruler           " Show cursor position
+set spelllang=en_au " Australian English
 
 " File manager
 let g:netrw_banner=0    " Disable banner
 let g:netrw_liststyle=3 " Tree
 
-" Ident Guide
+" Indent Guide
 let g:indent_guides_auto_colors=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#e6e6e6 ctermbg=4
 
