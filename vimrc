@@ -1,8 +1,17 @@
-syntax enable
+" Vundle
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'wincent/Command-T'
+
+filetype plugin indent on
 
 " Wildmenu
 set wildmenu
-set wildmode=longest,full
+set wildmode=longest,full 
 
 " Search
 set ignorecase " Case insensitive search
@@ -30,8 +39,9 @@ nnoremap <LEADER>n :n .<CR>  " Open the filer manager at the current working dir
 nnoremap <ESC> :noh<CR><ESC> " Clear highlights
 
 " Other
-set number " Show line numbers
-set ruler  " Show cursor position
+syntax enable " Syntax highlighting
+set number    " Show line numbers
+set ruler     " Show cursor position
 
 " MacVim
 if has("gui_running")
