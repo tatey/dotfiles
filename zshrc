@@ -1,7 +1,7 @@
 # Environment
 export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
-export GIT_EDITOR="mate -w"
-export BUNDLER_EDITOR="mate"
+export GIT_EDITOR="mvim -f"
+export BUNDLER_EDITOR="mvim"
 
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
