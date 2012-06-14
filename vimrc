@@ -47,13 +47,16 @@ set number          " Show line numbers
 set ruler           " Show cursor position
 set spelllang=en_au " Australian English
 
-" File manager
-let g:netrw_banner=0    " Disable banner
-let g:netrw_liststyle=3 " Tree
+" Persistent undo
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " Where to save histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " Number of lines to save
 
-" Indent Guide
-let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#e6e6e6 ctermbg=4
+" File manager
+let g:netrw_list_hide= '^\..*$' " Hide dotfiles 
+let g:netrw_banner=0            " Disable banner
+let g:netrw_liststyle=3         " Tree
 
 " MacVim
 if has("gui_running")
