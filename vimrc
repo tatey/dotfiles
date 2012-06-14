@@ -5,7 +5,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'wincent/Command-T'
+Bundle 'mileszs/ack.vim'
+Bundle 'wincent/Command-T.git'
 Bundle 'vim-scripts/upAndDown'
 
 filetype plugin indent on
