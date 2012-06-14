@@ -36,8 +36,9 @@ set noswapfile
 " Bindings
 nnoremap <LEADER>n :n .<CR>             " Open the filer manager at the current working directory.
 nnoremap <ESC> :noh<CR><ESC>            " Clear highlights
-nmap <leader>l :set list!<CR>           " Toggle list characters (Invisibles)
-nmap <silent> <leader>s :set spell!<CR> " Toggle spell
+nmap <LEADER>l :set list!<CR>           " Toggle list characters (Invisibles)
+nmap <SILENT> <LEADER>s :set spell!<CR> " Toggle spell
+map <LEADER>f :Ack! 
 
 " Window
 syntax enable       " Syntax highlighting
