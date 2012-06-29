@@ -58,5 +58,16 @@ hitch() {
   if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
 }
 
+# git log search
+function gls() {
+  local phrase="$1"
+  shift
+  if [[ $# == 0 ]]
+  then
+    local default_range=HEAD
+  fi
+  git log --patch --pickaxe-all -S"$phrase" "$@" $default_range
+}
+
 # Disable autocorrect
 unsetopt correct_all
