@@ -6,8 +6,11 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim'
-Bundle 'wincent/Command-T.git'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-surround'
+Bundle 'wincent/Command-T'
 Bundle 'vim-scripts/upAndDown'
+Bundle 'bronson/vim-trailing-whitespace'
 
 filetype plugin indent on
 
