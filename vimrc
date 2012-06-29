@@ -16,7 +16,7 @@ filetype plugin indent on
 
 " Wildmenu
 set wildmenu
-set wildmode=longest,full 
+set wildmode=longest,full
 
 " Search
 set ignorecase " Case insensitive search
@@ -41,7 +41,7 @@ nnoremap <LEADER>n :n .<CR>   " Open the filer manager at the current working di
 nnoremap <ESC> :noh<CR><ESC>  " Clear highlights
 nmap <LEADER>l :set list!<CR> " Toggle list characters (Invisibles)
 map <LEADER>s :set spell!<CR> " Toggle spell
-map <LEADER>f :Ack! 
+map <LEADER>f :Ack!
 
 " Window
 syntax enable       " Syntax highlighting
@@ -57,7 +57,7 @@ set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
 
 " File manager
-let g:netrw_list_hide= '^\..*$' " Hide dotfiles 
+let g:netrw_list_hide= '^\..*$' " Hide dotfiles
 let g:netrw_banner=0            " Disable banner
 let g:netrw_liststyle=3         " Tree
 
