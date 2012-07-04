@@ -10,7 +10,6 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 Bundle 'vim-scripts/upAndDown'
-Bundle 'bronson/vim-trailing-whitespace'
 
 filetype plugin indent on
 
@@ -24,10 +23,12 @@ set incsearch  " Makes search act like search in modern browsers
 set hlsearch   " Highlight search results
 
 " Whitespace
-set nowrap        " Do not wrap lines
-set expandtab     " Use spaces instead of tabs
-set smarttab      " Be smart when using tabs ;-)
-set softtabstop=2 " 1 tab is 2 spaces
+set list                      " Show invisibles by default
+set listchars=tab:▸\ ,trail:· " Show tabs, trailing whitespace and end of lines
+set nowrap                    " Do not wrap lines
+set expandtab                 " Use spaces instead of tabs
+set smarttab                  " Be smart when using tabs ;-)
+set softtabstop=2             " 1 tab is 2 spaces
 set shiftwidth=2
 set tabstop=2
 
