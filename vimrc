@@ -31,6 +31,8 @@ set smarttab                  " Be smart when using tabs ;-)
 set softtabstop=2             " 1 tab is 2 spaces
 set shiftwidth=2
 set tabstop=2
+set foldmethod=indent         " Fold based on indentation.
+set foldlevelstart=99         " Expand all folds by default.
 
 " Disable backup. No swap files.
 set nobackup
