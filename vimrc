@@ -13,6 +13,8 @@ Bundle 'vim-scripts/upAndDown'
 
 filetype plugin indent on
 
+runtime macros/matchit.vim " Match pairs of keywords (Eg: def, end)
+
 " Wildmenu
 set wildmenu
 set wildmode=longest,full
