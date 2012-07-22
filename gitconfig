@@ -1,6 +1,6 @@
 [user]
-	name = Tate Johnson
-	email = tate@tatey.com
+  name = Tate Johnson
+  email = tate@tatey.com
 [alias]
   co      = checkout
   undo    = reset --soft HEAD^
@@ -15,13 +15,13 @@
   editor = mate -w
 [core]
   excludesfile = ~/.gitignore
-	quotepath = false
+  quotepath = false
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
 [push]
-	default = tracking
+  default = tracking
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [github]
-	user = tatey
-	token = 362173f4954737dd65f2df83532d7072
+  user = tatey
+  token = 362173f4954737dd65f2df83532d7072
