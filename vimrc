@@ -48,6 +48,7 @@ nmap <LEADER>l :set list!<CR>|"        Toggle list characters (Invisibles)
 map <LEADER>s :set spell!<CR>|"        Toggle spell
 map <LEADER>F :AckFromSearch!<Space>|" Search visual selection
 map <LEADER>f :Ack!<Space>|"           Search
+map <LEADER>T :CommandTFlush<CR>|"     Like command-T, but flush cache too.
 
 " Window
 syntax enable       " Syntax highlighting
