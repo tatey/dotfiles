@@ -3,8 +3,6 @@
   email = tate@tatey.com
 [alias]
   co      = checkout
-  undo    = reset --soft HEAD^
-  unstage = reset HEAD
 [color]
   ui          = auto
   branch      = auto
