@@ -20,6 +20,3 @@
   default = tracking
 [branch]
   autosetuprebase = always
-[github]
-  user = tatey
-  token = 362173f4954737dd65f2df83532d7072
