@@ -23,7 +23,7 @@ export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rbenv git brew gem rails3 bundler autojump)
+plugins=(rbenv git brew gem rails3 bundler)
 
 # oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -40,13 +40,6 @@ alias gaur="git ls-files --exclude-standard --modified -z | xargs -0 git ls-file
 alias gld="git fsck --lost-found | grep '^dangling commit' | cut -d ' ' -f 3- | xargs git show -s --format='%ct %H' | sort -nr | cut -d ' ' -f 2 | xargs git show --stat" # Show all dangling commits
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gla='glg HEAD $(cd "$(git rev-parse --git-dir)" && find refs/{heads,remotes,tags} -type f)'
-
-alias v='/usr/bin/env vim'
-alias nano='/usr/bin/env vim'
-
-alias bx='bundle exec'
-alias berd='bundle exec rspec -f doc'
-alias berds='berd --drb'
 
 alias ded='rm -Rf $HOME/Library/Developer/Xcode/DerivedData/'
 
