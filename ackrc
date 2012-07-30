@@ -1,0 +1,10 @@
+--ignore-dir=log
+--smart-case
+--type-add=ruby=.haml,.hamlc,.feature,.ru
+--type-add=css=.sass,.scss
+--type-set=markdown=.markdown,.mdown,.md
+--type-add=objc=.pch
+--type-set=xcode=.pbxproj,.pbxuser,.perspectivev3
+--type-set=nib=.xib
+--type-set=plist=.plist
+--type-set=coffeescript=.coffee
