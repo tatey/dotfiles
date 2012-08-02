@@ -10,7 +10,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
-Bundle 'vim-scripts/upAndDown'
 
 filetype plugin indent on
 
