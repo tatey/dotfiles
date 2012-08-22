@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mileszs/ack.vim'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 
