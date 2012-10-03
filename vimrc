@@ -66,16 +66,3 @@ set undoreload=10000        " Number of lines to save
 let g:netrw_list_hide= '^\..*$' " Hide dotfiles
 let g:netrw_banner=0            " Disable banner
 let g:netrw_liststyle=3         " Tree
-
-" GUI
-if has("gui_running")
-  colorscheme bclear
-  set guifont=Monaco:h13
-  set guioptions=-t " Hide toolbar
-  set guioptions=+c " Disable dialogues
-endif
-
-" MacVim
-if has("gui_macvim")
-  autocmd FocusLost * nested :silent! wall " Save all buffers when focus is lost
-endif
