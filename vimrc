@@ -43,7 +43,6 @@ set nowb
 set noswapfile
 
 " Bindings
-nnoremap <LEADER>n :n .<CR>|"          Open the filer manager at the current working directory
 nnoremap <ESC> :noh<CR><ESC>|"         Clear highlights
 nmap <LEADER>l :set list!<CR>|"        Toggle list characters (Invisibles)
 map <LEADER>s :set spell!<CR>|"        Toggle spell
