@@ -43,10 +43,12 @@ set nowb
 set noswapfile
 
 " Bindings
-nnoremap <ESC> :noh<CR><ESC>|"         Clear highlights
-nmap <LEADER>l :set list!<CR>|"        Toggle list characters (Invisibles)
-map <LEADER>s :set spell!<CR>|"        Toggle spell
-map <LEADER>f :Ack!<Space>|"           Search
+nnoremap <ESC> :noh<CR><ESC>|"                    Clear highlights
+nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisibles)
+map <LEADER>s :set spell!<CR>|"                   Toggle spell
+map <LEADER>f :Ack!<Space>|"                      Search
+map <leader>t :CommandT<cr>|"                     Command-T
+map <leader>T :CommandTFlush<cr>\|:CommandT<cr>|" Command-T flushing cache
 
 " Window
 syntax enable       " Syntax highlighting
