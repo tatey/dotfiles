@@ -23,14 +23,19 @@ export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rbenv git brew gem rails3)
+plugins=(git brew gem rails3)
 
 # oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# rbenv
+export RBENV_ROOT=/Users/Tate/.homebrew/opt/rbenv
+eval "$(rbenv init -)"
+
 # Aliases
 alias c='cd $HOME/Code/Remote'
 alias d='cd $HOME/Desktop'
+alias w='cd $HOME/Work/Code'
 
 alias gs='git status --short'
 alias gd='git diff'
