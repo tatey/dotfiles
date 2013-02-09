@@ -7,10 +7,11 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
-Bundle 'wincent/Command-T'
 
 filetype plugin indent on
 
@@ -47,8 +48,7 @@ nnoremap <ESC> :noh<CR><ESC>|"                    Clear highlights
 nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisibles)
 map <LEADER>s :set spell!<CR>|"                   Toggle spell
 map <LEADER>f :Ack!<Space>|"                      Search
-map <leader>t :CommandT<cr>|"                     Command-T
-map <leader>T :CommandTFlush<cr>\|:CommandT<cr>|" Command-T flushing cache
+map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 
 " Window
 syntax enable       " Syntax highlighting
@@ -63,7 +63,17 @@ set undodir=$HOME/.vim/undo " Where to save histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
 
-" File manager
+" NetRW
 let g:netrw_list_hide= '^\..*$' " Hide dotfiles
 let g:netrw_banner=0            " Disable banner
 let g:netrw_liststyle=3         " Tree
+
+" CtrlP
+let g:ctrlp_buffer_func = { 'enter': 'CtrlPEnter' }                   " Kill buffers in CtrlP with <C-@>
+func! CtrlPEnter()                                                    " https://github.com/kien/ctrlp.vim/issues/280
+  nnoremap <buffer> <silent> <C-@> :call <sid>CtrlPDeleteBuffer()<CR>
+endfunc
+func! s:CtrlPDeleteBuffer()
+  exec "bd" fnamemodify(getline('.')[2:], ':p')
+  exec "norm \<F5>"
+endfunc
