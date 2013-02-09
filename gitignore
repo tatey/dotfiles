@@ -4,6 +4,7 @@ x_gateway_simulator.rb
 
 # Ruby
 .rvmrc
+.rbenv-gemsets
 .rbenv-vars
 .rbenv-version
 
