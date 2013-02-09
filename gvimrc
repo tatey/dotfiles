@@ -1,6 +1,7 @@
 " GUI
 if has("gui_running")
-  colorscheme bclear
+  colorscheme hemisu
+  set background=light
   set guifont=Monaco:h13
   set guioptions=-t " Hide toolbar
   set guioptions=+c " Disable dialogues
