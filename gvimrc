@@ -1,6 +1,6 @@
 " GUI
 if has("gui_running")
-  colorscheme hemisu
+  colorscheme bclear
   set background=light
   set guifont=Monaco:h13
   set guioptions=-t " Hide toolbar
