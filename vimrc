@@ -70,6 +70,11 @@ let g:netrw_banner=0            " Disable banner
 let g:netrw_liststyle=3         " Tree
 
 " CtrlP
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\.git$\|\.hg$\|\.svn$\|logs$\|tmp$\|source_maps$',
+  \ 'file': '',
+  \ 'link': '',
+  \ }
 let g:ctrlp_buffer_func = { 'enter': 'CtrlPEnter' }                   " Kill buffers in CtrlP with <C-@>
 func! CtrlPEnter()                                                    " https://github.com/kien/ctrlp.vim/issues/280
   nnoremap <buffer> <silent> <C-@> :call <sid>CtrlPDeleteBuffer()<CR>
