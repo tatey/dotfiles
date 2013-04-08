@@ -7,6 +7,7 @@ x_gateway_simulator.rb
 .rbenv-gemsets
 .rbenv-vars
 .rbenv-version
+.ruby-version
 
 # LaTeX
 *.aux
