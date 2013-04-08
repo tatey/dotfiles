@@ -70,6 +70,7 @@ let g:netrw_banner=0            " Disable banner
 let g:netrw_liststyle=3         " Tree
 
 " CtrlP
+let g:ctrlp_working_path_mode = 0 " Don't manage. Plays nicely with `bundle open <name>`
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\.git$\|\.hg$\|\.svn$\|logs$\|tmp$\|source_maps$',
   \ 'file': '',
