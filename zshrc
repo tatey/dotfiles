@@ -1,5 +1,5 @@
 # Environment
-export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
+export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$HOME/.homebrew/share/npm/bin:$PATH"
 export GIT_EDITOR="mvim -f"
 export BUNDLER_EDITOR="mvim"
 
