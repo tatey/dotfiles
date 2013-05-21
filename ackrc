@@ -1,5 +1,7 @@
 --ignore-dir=log
 --ignore-dir=public/source_maps
+--ignore-dir=tmp
+--ignore-dir=vendor/gems
 --smart-case
 --type-add=ruby=.haml,.hamlc,.feature,.ru
 --type-add=js=.coffee
