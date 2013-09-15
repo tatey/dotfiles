@@ -6,9 +6,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'bufkill.vim'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'mileszs/ack.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'sheerun/vim-polyglot'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-haml'
