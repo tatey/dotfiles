@@ -1,4 +1,5 @@
-" Vundle
+" Required by Vundle
+set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -11,10 +12,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
 
-filetype plugin indent on
+filetype plugin indent on " Required by Vundle
 
 runtime macros/matchit.vim " Match pairs of keywords (Eg: def, end)
 
