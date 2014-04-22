@@ -5,6 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'airblade/vim-gitgutter'
+Bundle 'dockyard/vim-easydir'
 Bundle 'gmarik/vundle'
 Bundle 'bufkill.vim'
 Bundle 'mileszs/ack.vim'
@@ -72,7 +74,7 @@ let g:netrw_liststyle=3         " Tree
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " Don't manage. Plays nicely with `bundle open <name>`
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|logs$\|tmp$\|source_maps$\|vendor/gems$',
+  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|logs$\|tmp$\|source_maps$\|vendor/gems$\|vendor/bundle$',
   \ 'file': '',
   \ 'link': '',
   \ }
@@ -84,3 +86,6 @@ func! s:CtrlPDeleteBuffer()
   exec "bd" fnamemodify(getline('.')[2:], ':p')
   exec "norm \<F5>"
 endfunc
+
+" Filetypes
+autocmd BufRead,BufNewFile *.prawn set filetype=ruby
