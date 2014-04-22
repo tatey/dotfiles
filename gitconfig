@@ -20,3 +20,5 @@
   default = tracking
 [branch]
   autosetuprebase = always
+[mergetool]
+	keepBackup = false
