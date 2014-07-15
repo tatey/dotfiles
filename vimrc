@@ -52,6 +52,7 @@ nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisi
 map <LEADER>s :set spell!<CR>|"                   Toggle spell
 map <LEADER>f :Ack!<Space>|"                      Search
 map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
+nnoremap Q <nop>|"                                Don't enter Ex mode
 
 " Window
 syntax enable       " Syntax highlighting
