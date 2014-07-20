@@ -35,7 +35,7 @@ eval "$(rbenv init -)"
 # Aliases
 alias c='cd $HOME/Code/Remote'
 alias d='cd $HOME/Desktop'
-alias w='cd $HOME/Work/Code'
+alias j='cd $HOME/Downloads'
 
 alias gs='git status --short'
 alias gd='git diff'
