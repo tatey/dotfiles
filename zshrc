@@ -45,8 +45,6 @@ alias gld="git fsck --lost-found | grep '^dangling commit' | cut -d ' ' -f 3- | 
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gla='glg HEAD $(cd "$(git rev-parse --git-dir)" && find refs/{heads,remotes,tags} -type f)'
 
-alias ded='rm -Rf $HOME/Library/Developer/Xcode/DerivedData/'
-
 alias reload='. $HOME/.zshrc'
 
 # Functions
