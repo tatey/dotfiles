@@ -90,3 +90,5 @@ endfunc
 
 " Filetypes
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby
+autocmd BufRead,BufNewFile *.skim set filetype=slim
+autocmd BufRead,BufNewFile *.us set filetype=html
