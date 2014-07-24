@@ -46,9 +46,6 @@ set nobackup
 set nowb
 set noswapfile
 
-" Quirks
-set noballooneval " Don't show ballon tooltip when hovering with mouse
-
 " Bindings
 nnoremap <ESC> :noh<CR><ESC>|"                    Clear highlights
 nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisibles)
