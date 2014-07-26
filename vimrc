@@ -9,7 +9,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'dockyard/vim-easydir'
 Bundle 'gmarik/vundle'
 Bundle 'bufkill.vim'
-Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'tomtom/tcomment_vim'
@@ -50,7 +50,7 @@ set noswapfile
 nnoremap <ESC> :noh<CR><ESC>|"                    Clear highlights
 nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisibles)
 map <LEADER>s :set spell!<CR>|"                   Toggle spell
-map <LEADER>f :Ack!<Space>|"                      Search
+map <LEADER>f :Ag<Space>|"                        Search
 map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 nnoremap Q <nop>|"                                Don't enter Ex mode
 
