@@ -15,6 +15,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-surround'
 Bundle 'SyntaxAttr.vim'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on " Required by Vundle
 
@@ -88,6 +89,11 @@ func! s:CtrlPDeleteBuffer()
   exec "bd" fnamemodify(getline('.')[2:], ':p')
   exec "norm \<F5>"
 endfunc
+
+" Go
+let g:go_disable_autoinstall = 1
+let g:go_fmt_command = "gofmt"
+autocmd Filetype go setlocal nolist " Don't show whitespace characters in Go
 
 " Filetypes
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby
