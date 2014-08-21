@@ -5,7 +5,6 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'airblade/vim-gitgutter'
 Bundle 'dockyard/vim-easydir'
 Bundle 'gmarik/vundle'
 Bundle 'bufkill.vim'
