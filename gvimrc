@@ -2,7 +2,7 @@
 if has("gui_running")
   colorscheme base16-eighties
   set background=dark
-  set guifont=Monaco:h13
+  set guifont=MonacoB:h13
   set guioptions=-t " Hide toolbar
   set guioptions=+c " Disable dialogues
 endif
