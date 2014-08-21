@@ -5,7 +5,6 @@ if has("gui_running")
   set guifont=Monaco:h13
   set guioptions=-t " Hide toolbar
   set guioptions=+c " Disable dialogues
-  set noballooneval " Don't show ballon tooltip when hovering with mouse
 endif
 
 " MacVim
