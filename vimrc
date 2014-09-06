@@ -16,6 +16,7 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-surround'
 Bundle 'SyntaxAttr.vim'
 Bundle 'fatih/vim-go'
+Bundle 'mxw/vim-jsx'
 
 filetype plugin indent on " Required by Vundle
 
