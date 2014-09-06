@@ -96,6 +96,9 @@ let g:go_fmt_command = "gofmt"
 let g:go_fmt_fail_silently = 1
 autocmd Filetype go setlocal nolist " Don't show whitespace characters in Go
 
+" Make
+autocmd filetype make setlocal noexpandtab " Make is sensitive to whitespace.
+
 " Filetypes
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 autocmd BufRead,BufNewFile *.skim set filetype=slim
