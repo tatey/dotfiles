@@ -34,7 +34,7 @@ export RBENV_ROOT=/Users/Tate/.homebrew/opt/rbenv
 eval "$(rbenv init -)"
 
 # Aliases
-alias c='cd $HOME/Code/Remote'
+alias c='cd $HOME/Code'
 alias d='cd $HOME/Desktop'
 alias j='cd $HOME/Downloads'
 
