@@ -14,8 +14,8 @@ Bundle 'sheerun/vim-polyglot'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-vinegar'
 Bundle 'fatih/vim-go'
-Bundle 'mxw/vim-jsx'
 
 filetype plugin indent on " Required by Vundle
 
@@ -67,11 +67,6 @@ set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " Where to save histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
-
-" NetRW
-let g:netrw_list_hide= '^\..*$' " Hide dotfiles
-let g:netrw_banner=0            " Disable banner
-let g:netrw_liststyle=3         " Tree
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " Don't manage. Plays nicely with `bundle open <name>`
