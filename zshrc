@@ -48,12 +48,6 @@ alias gla='glg HEAD $(cd "$(git rev-parse --git-dir)" && find refs/{heads,remote
 
 alias reload='. $HOME/.zshrc'
 
-# Functions
-hitch() {
-  command hitch "$@"
-  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-}
-
 # git log search
 function gls() {
   local phrase="$1"
