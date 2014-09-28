@@ -14,7 +14,6 @@ Bundle 'sheerun/vim-polyglot'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-surround'
-Bundle 'SyntaxAttr.vim'
 Bundle 'fatih/vim-go'
 Bundle 'mxw/vim-jsx'
 
@@ -55,7 +54,6 @@ map <LEADER>s :set spell!<CR>|"                   Toggle spell
 map <LEADER>f :Ag<Space>|"                        Search
 map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 nnoremap Q <nop>|"                                Don't enter Ex mode
-map -a :call SyntaxAttr()<CR>|"                   Print syntax highlighting attribute
 
 " Window
 syntax enable       " Syntax highlighting
