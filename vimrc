@@ -89,7 +89,7 @@ let g:go_disable_autoinstall = 1
 let g:go_fmt_command = "gofmt"
 let g:go_fmt_fail_silently = 1
 autocmd Filetype go setlocal nolist        " Don't show whitespace characters in Go, gofmt takes care of whitespace
-autocmd Filetype go setlocal noexpandtab   " Use spaces instead of tabs
+autocmd Filetype go setlocal noexpandtab   " Always use tabs, never spaces
 autocmd Filetype go setlocal softtabstop=4 " 1 tab is 4 spaces
 autocmd Filetype go setlocal shiftwidth=4
 autocmd Filetype go setlocal tabstop=4
