@@ -8,11 +8,11 @@ These are my dotfiles. There are many like them, but these ones are mine.
 
 Link files in the repository as dot files in your home directory.
 
-    ./bootstrap link
+    ./bootstrap.sh link
 
 Unlink files in your home directory.
 
-    ./bootstrap unlink
+    ./bootstrap.sh unlink
 
 ## License
 
