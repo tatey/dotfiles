@@ -1,6 +1,5 @@
 # Paths
 export PATH="$HOME/.bin:$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$HOME/.homebrew/share/npm/bin:$HOME/.homebrew/opt/go/libexec/bin:$HOME/Code/Go/bin:$PATH"
-export GIT_EDITOR="mvim -f"
 export BUNDLER_EDITOR="mvim"
 export GOPATH="$HOME/Code/Go"
 
