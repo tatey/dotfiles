@@ -5,5 +5,6 @@ alias j='cd $HOME/Downloads'
 alias gc='git commit'
 alias gs='git status --short'
 alias gd='git diff'
+alias gp='git push'
 
 alias reload='. $HOME/.zshrc'
