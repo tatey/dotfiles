@@ -3,7 +3,7 @@ export PATH="$HOME/.bin:$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$HOME/.homebrew
 export BUNDLER_EDITOR="mvim"
 export GOPATH="$HOME/Code/Go"
 
-# Load and run compinit
+# Completion
 autoload -U compinit
 compinit -i
 
