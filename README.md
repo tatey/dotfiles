@@ -8,21 +8,11 @@ These are my dotfiles. There are many like them, but these ones are mine.
 
 Link files in the repository as dot files in your home directory.
 
-    rake link
-
-Link files in the repository as dot files in `DEST`
-
-    rake link DEST=/path/to/dest
-
-Link files in `SRC` as dot files in `DEST`
-
-    rake link SRC=/path/to/src DEST=/path/to/dest
+    ./bootstrap link
 
 Unlink files in your home directory.
 
-    rake unlink
-
-The same environment variables may be set for `unlink`.
+    ./bootstrap unlink
 
 ## License
 
