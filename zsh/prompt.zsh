@@ -6,7 +6,12 @@ ls --color -d . &>/dev/null 2>&1 && alias ls='ls --color=tty' || alias ls='ls -G
 setopt multios
 setopt cdablevarS
 
-# Apply theming defaults
+# Set title
+precmd () {
+  print -Pn "\e]2;%c\a"
+}
+
+# Set prompt
 PROMPT='%{$fg[white]%}%c$(git_prompt_info)$ % %{$reset_color%}'
 
 # git theming default: Variables for theming the git info prompt
