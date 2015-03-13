@@ -16,6 +16,7 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-vinegar'
 Bundle 'fatih/vim-go'
+Bundle 'junegunn/vim-easy-align'
 
 filetype plugin indent on " Required by Vundle
 
@@ -54,6 +55,7 @@ map <LEADER>s :set spell!<CR>|"                   Toggle spell
 map <LEADER>f :Ag<Space>|"                        Search
 map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 nnoremap Q <nop>|"                                Don't enter Ex mode
+vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
 
 " Window
 syntax enable       " Syntax highlighting
