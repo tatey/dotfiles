@@ -9,13 +9,13 @@ Bundle 'dockyard/vim-easydir'
 Bundle 'gmarik/vundle'
 Bundle 'bufkill.vim'
 Bundle 'rking/ag.vim'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'sheerun/vim-polyglot'
+Bundle 'rhysd/vim-crystal'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-vinegar'
-Bundle 'fatih/vim-go'
 Bundle 'junegunn/vim-easy-align'
 
 filetype plugin indent on " Required by Vundle
@@ -103,3 +103,4 @@ autocmd filetype make setlocal noexpandtab " Make is sensitive to whitespace.
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 autocmd BufRead,BufNewFile *.skim set filetype=slim
 autocmd BufRead,BufNewFile *.us set filetype=html
+autocmd BufRead,BufNewFile *.jsx.erb set filetype=javascript.jsx
