@@ -1,7 +1,6 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'dockyard/vim-easydir'
-Plug 'gmarik/vundle'
 Plug 'bufkill.vim'
 Plug 'rking/ag.vim'
 Plug 'ctrlpvim/ctrlp.vim'
