@@ -1,25 +1,17 @@
-" Required by Vundle
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'dockyard/vim-easydir'
-Bundle 'gmarik/vundle'
-Bundle 'bufkill.vim'
-Bundle 'rking/ag.vim'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'sheerun/vim-polyglot'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-vinegar'
-Bundle 'junegunn/vim-easy-align'
-
-filetype plugin indent on " Required by Vundle
-
-runtime macros/matchit.vim " Match pairs of keywords (Eg: def, end)
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'dockyard/vim-easydir'
+Plug 'gmarik/vundle'
+Plug 'bufkill.vim'
+Plug 'rking/ag.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
+Plug 'junegunn/vim-easy-align'
+call plug#end()
 
 " Wildmenu
 set wildmenu
@@ -55,6 +47,7 @@ map <LEADER>f :Ag<Space>|"                        Search
 map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 nnoremap Q <nop>|"                                Don't enter Ex mode
 vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
+runtime macros/matchit.vim |"                     Match pairs of keywords (Eg: def, end)
 
 " Window
 syntax enable       " Syntax highlighting
