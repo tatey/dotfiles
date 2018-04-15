@@ -9,12 +9,10 @@
   diff        = auto
   interactive = auto
   status      = auto
-[code]
-  editor = mate -w
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
-	editor = mvim -f
+  editor = vimr --wait --nvim
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
 [push]
