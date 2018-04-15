@@ -1,16 +1,18 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'dockyard/vim-easydir'
 Plug 'bufkill.vim'
-Plug 'rking/ag.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dockyard/vim-easydir'
+Plug 'junegunn/vim-easy-align'
+Plug 'lmeijvogel/vim-yaml-helper'
+Plug 'rizzatti/dash.vim'
+Plug 'rking/ag.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
-Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 " Wildmenu
@@ -91,6 +93,7 @@ autocmd filetype make setlocal noexpandtab " Make is sensitive to whitespace.
 
 " Filetypes
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby
+autocmd BufRead,BufNewFile Fastfile set filetype=ruby
 autocmd BufRead,BufNewFile *.skim set filetype=slim
 autocmd BufRead,BufNewFile *.us set filetype=html
 autocmd BufRead,BufNewFile *.jsx.erb set filetype=javascript.jsx
