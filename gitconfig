@@ -25,3 +25,5 @@
 	keepBackup = false
 [rebase]
   autosquash = true
+[merge]
+  conflictstyle = diff3
