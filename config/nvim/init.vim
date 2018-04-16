@@ -84,6 +84,13 @@ endfunc
 colorscheme base16-eighties
 set background=dark
 
+" GUI
+if has("gui_vimr")
+  autocmd FocusLost * nested :silent! wall " Save all buffers when focus is lost
+  autocmd FocusGained * checktime          " Check if file has been edited externally when focus is gained
+  set noautoread                           " Prompt when file has been edited externally
+endif
+
 " Filetypes
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 autocmd BufRead,BufNewFile Fastfile set filetype=ruby
