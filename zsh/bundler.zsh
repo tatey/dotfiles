@@ -1,1 +1,1 @@
-export BUNDLER_EDITOR="vimr"
+export BUNDLER_EDITOR="vimr -n"
