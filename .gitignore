@@ -1,2 +1,3 @@
-vim/
+bundle/cache
 config/nvim/.netrwhist
+vim/
