@@ -81,8 +81,7 @@ func! s:CtrlPDeleteBuffer()
 endfunc
 
 " Color Scheme
-colorscheme base16-eighties
-set background=dark
+colorscheme dracula
 
 " GUI
 if has("gui_vimr")
