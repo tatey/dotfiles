@@ -5,6 +5,7 @@ Plug 'dockyard/vim-easydir'
 Plug 'fenetikm/falcon'
 Plug 'junegunn/vim-easy-align'
 Plug 'lmeijvogel/vim-yaml-helper'
+Plug 'machakann/vim-highlightedyank'
 Plug 'rizzatti/dash.vim'
 Plug 'rking/ag.vim'
 Plug 'sheerun/vim-polyglot'
@@ -52,7 +53,6 @@ vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
 runtime macros/matchit.vim |"                     Match pairs of keywords (Eg: def, end)
 
 " Window
-syntax enable          " Syntax highlighting
 set hidden             " Allow hiding buffers with unsaved changes
 set number             " Show line numbers
 set ruler              " Show cursor position
@@ -86,23 +86,22 @@ endfunc
 set ttyfast
 set lazyredraw
 
-" Color Scheme
+" Color scheme
 colorscheme dracula
 
-" Filetypes
-autocmd BufRead,BufNewFile *.prawn set filetype=ruby
-autocmd BufRead,BufNewFile Fastfile set filetype=ruby
-autocmd BufRead,BufNewFile *.skim set filetype=slim
-autocmd BufRead,BufNewFile *.us set filetype=html
-autocmd BufRead,BufNewFile *.jsx.erb set filetype=javascript.jsx
+" Save when focus is lost
+autocmd BufLeave,FocusLost * silent! wall
+
+" Ruby/YAML, 2 spaces
+autocmd BufRead,BufNewFile {*.prawn,Fastfile} set ft=ruby
+autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber setlocal ai sw=2 sts=2 et
 
 " Go
 let g:go_disable_autoinstall = 1
-autocmd Filetype go setlocal nolist        " Don't show whitespace characters in Go, gofmt takes care of whitespace
-autocmd Filetype go setlocal noexpandtab   " Always use tabs, never spaces
-autocmd Filetype go setlocal softtabstop=4 " 1 tab is 4 spaces
-autocmd Filetype go setlocal shiftwidth=4
-autocmd Filetype go setlocal tabstop=4
+autocmd FileType go setlocal nolist noet sw=4 sts=4 ts=4
 
 " Make
-autocmd filetype make setlocal noexpandtab " Make is sensitive to whitespace.
+autocmd FileType make setlocal noet
+
+" Git
+autocmd FileType gitcommit setlocal spell " Always turn on spell check
