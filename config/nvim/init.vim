@@ -52,11 +52,13 @@ vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
 runtime macros/matchit.vim |"                     Match pairs of keywords (Eg: def, end)
 
 " Window
-syntax enable       " Syntax highlighting
-set hidden          " Allow hiding buffers with unsaved changes
-set number          " Show line numbers
-set ruler           " Show cursor position
-set spelllang=en_au " Australian English
+syntax enable          " Syntax highlighting
+set hidden             " Allow hiding buffers with unsaved changes
+set number             " Show line numbers
+set ruler              " Show cursor position
+set spelllang=en_au    " Australian English
+set switchbuf=useopen  " Don't re-open already opened buffers
+set clipboard+=unnamed " Yanks go on clipboard instead
 
 " Persistent undo
 set undofile                " Save undo's after file closes
@@ -80,15 +82,12 @@ func! s:CtrlPDeleteBuffer()
   exec "norm \<F5>"
 endfunc
 
+" Speed
+set ttyfast
+set lazyredraw
+
 " Color Scheme
 colorscheme dracula
-
-" GUI
-if has("gui_vimr")
-  autocmd FocusLost * nested :silent! wall " Save all buffers when focus is lost
-  autocmd FocusGained * checktime          " Check if file has been edited externally when focus is gained
-  set noautoread                           " Prompt when file has been edited externally
-endif
 
 " Filetypes
 autocmd BufRead,BufNewFile *.prawn set filetype=ruby

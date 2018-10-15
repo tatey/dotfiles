@@ -12,7 +12,7 @@
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
-  editor = vimr --wait --nvim
+  editor = nvim
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%cr)%Creset
 [push]
