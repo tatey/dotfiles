@@ -50,6 +50,8 @@ map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 nnoremap Q <nop>|"                                Don't enter Ex mode
 vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
 runtime macros/matchit.vim |"                     Match pairs of keywords (Eg: def, end)
+noremap <Leader>y "*y|"                           Copy to system's clipboard
+noremap <Leader>p "*p|"                           Paste from system's clipboard
 
 " Window
 set hidden             " Allow hiding buffers with unsaved changes
@@ -57,7 +59,6 @@ set number             " Show line numbers
 set ruler              " Show cursor position
 set spelllang=en_au    " Australian English
 set switchbuf=useopen  " Don't re-open already opened buffers
-set clipboard+=unnamed " Yanks go on clipboard instead
 
 " Persistent undo
 set undofile                " Save undo's after file closes
