@@ -49,6 +49,7 @@ map <LEADER>f :Ack!<Space>|"                                Search CWD
 map <LEADER>F :Ack! <C-r><C-w><CR>|"                        Search CWD with word under cursor
 nnoremap ? :%s/\<<C-r><C-w>\>//g<Left><Left>|"              Replace in buffer with word under cursor
 nnoremap <LEADER>? :cdo %s/\<<C-r><C-w>\>//g<Left><Left>|"  Replace CWD with word under cursor
+vmap gcb :TCommentBlock<CR>|"                               Create an empty, inline comment
 map <C-B> :CtrlPBuffer<CR>|"                                CtrlP in buffer mode
 nnoremap Q <nop>|"                                          Don't enter Ex mode
 vmap <Enter> <Plug>(EasyAlign)|"                            EasyAlign
