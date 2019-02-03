@@ -6,7 +6,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'lmeijvogel/vim-yaml-helper'
 Plug 'machakann/vim-highlightedyank'
 Plug 'rizzatti/dash.vim'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-eunuch'
@@ -45,7 +45,7 @@ set noswapfile
 nnoremap <ESC> :noh<CR><ESC>|"                    Clear highlights
 nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisibles)
 map <LEADER>s :set spell!<CR>|"                   Toggle spell
-map <LEADER>f :Ag<Space>|"                        Search
+map <LEADER>f :Ack!<Space>|"                      Search
 map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
 nnoremap Q <nop>|"                                Don't enter Ex mode
 vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
@@ -66,6 +66,11 @@ set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " Where to save histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
+
+" Ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " Don't manage. Plays nicely with `bundle open <name>`
