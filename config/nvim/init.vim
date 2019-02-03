@@ -52,6 +52,7 @@ vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
 runtime macros/matchit.vim |"                     Match pairs of keywords (Eg: def, end)
 noremap <Leader>y "*y|"                           Copy to system's clipboard
 noremap <Leader>p "*p|"                           Paste from system's clipboard
+nnoremap <leader><leader> <C-^>|"                 Alternate between buffers
 
 " Window
 set hidden             " Allow hiding buffers with unsaved changes
