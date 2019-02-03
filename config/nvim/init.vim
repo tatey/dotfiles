@@ -2,7 +2,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dockyard/vim-easydir'
-Plug 'fenetikm/falcon'
 Plug 'junegunn/vim-easy-align'
 Plug 'lmeijvogel/vim-yaml-helper'
 Plug 'machakann/vim-highlightedyank'
