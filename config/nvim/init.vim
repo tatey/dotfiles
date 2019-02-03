@@ -42,17 +42,20 @@ set nowb
 set noswapfile
 
 " Bindings
-nnoremap <ESC> :noh<CR><ESC>|"                    Clear highlights
-nmap <LEADER>l :set list!<CR>|"                   Toggle list characters (Invisibles)
-map <LEADER>s :set spell!<CR>|"                   Toggle spell
-map <LEADER>f :Ack!<Space>|"                      Search
-map <C-B> :CtrlPBuffer<CR>|"                      CtrlP in buffer mode
-nnoremap Q <nop>|"                                Don't enter Ex mode
-vmap <Enter> <Plug>(EasyAlign)|"                  EasyAlign
-runtime macros/matchit.vim |"                     Match pairs of keywords (Eg: def, end)
-noremap <Leader>y "*y|"                           Copy to system's clipboard
-noremap <Leader>p "*p|"                           Paste from system's clipboard
-nnoremap <leader><leader> <C-^>|"                 Alternate between buffers
+nnoremap <ESC> :noh<CR><ESC>|"                              Clear highlights
+nmap <LEADER>l :set list!<CR>|"                             Toggle list characters (Invisibles)
+map <LEADER>z :set spell!<CR>|"                             Toggle spell
+map <LEADER>f :Ack!<Space>|"                                Search CWD
+map <LEADER>F :Ack! <C-r><C-w><CR>|"                        Search CWD with word under cursor
+nnoremap ? :%s/\<<C-r><C-w>\>//g<Left><Left>|"              Replace in buffer with word under cursor
+nnoremap <LEADER>? :cdo %s/\<<C-r><C-w>\>//g<Left><Left>|"  Replace CWD with word under cursor
+map <C-B> :CtrlPBuffer<CR>|"                                CtrlP in buffer mode
+nnoremap Q <nop>|"                                          Don't enter Ex mode
+vmap <Enter> <Plug>(EasyAlign)|"                            EasyAlign
+runtime macros/matchit.vim |"                               Match pairs of keywords (Eg: def, end)
+noremap <LEADER>y "*y|"                                     Copy to system's clipboard
+noremap <LEADER>p "*p|"                                     Paste from system's clipboard
+nnoremap <LEADER><LEADER> <C-^>|"                           Alternate between buffers
 
 " Window
 set hidden             " Allow hiding buffers with unsaved changes
