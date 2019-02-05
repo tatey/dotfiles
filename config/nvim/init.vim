@@ -54,7 +54,7 @@ map <LEADER>t :Files<CR>|"                                  fzf files
 map <LEADER>b :Buffers<CR>|"                                fzf buffers
 nnoremap ? :%s/\<<C-r><C-w>\>//g<Left><Left>|"              Replace in buffer with word under cursor
 nnoremap <LEADER>? :cdo %s/\<<C-r><C-w>\>//g<Left><Left>|"  Replace CWD with word under cursor
-map <LEADER>w :Bwipeout<CR>|"                               Close buffer and switch to alternate file
+map <C-w>w :Bwipeout<CR>|"                                  Close buffer and switch to alternate file
 vmap gcb :TCommentBlock<CR>|"                               Create an empty, inline comment
 nnoremap Q <nop>|"                                          Don't enter Ex mode
 vmap <Enter> <Plug>(EasyAlign)|"                            EasyAlign
