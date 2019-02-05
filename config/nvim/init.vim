@@ -1,8 +1,9 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dockyard/vim-easydir'
+Plug '/Users/Tate/.homebrew/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'lmeijvogel/vim-yaml-helper'
 Plug 'machakann/vim-highlightedyank'
@@ -49,11 +50,12 @@ nmap <LEADER>l :set list!<CR>|"                             Toggle list characte
 map <LEADER>z :set spell!<CR>|"                             Toggle spell
 map <LEADER>f :Ack!<Space>|"                                Search CWD
 map <LEADER>F :Ack! <C-r><C-w><CR>|"                        Search CWD with word under cursor
+map <LEADER>t :Files<CR>|"                                  fzf files
+map <LEADER>b :Buffers<CR>|"                                fzf buffers
 nnoremap ? :%s/\<<C-r><C-w>\>//g<Left><Left>|"              Replace in buffer with word under cursor
 nnoremap <LEADER>? :cdo %s/\<<C-r><C-w>\>//g<Left><Left>|"  Replace CWD with word under cursor
 map <LEADER>w :Bwipeout<CR>|"                               Close buffer and switch to alternate file
 vmap gcb :TCommentBlock<CR>|"                               Create an empty, inline comment
-map <C-B> :CtrlPBuffer<CR>|"                                CtrlP in buffer mode
 nnoremap Q <nop>|"                                          Don't enter Ex mode
 vmap <Enter> <Plug>(EasyAlign)|"                            EasyAlign
 runtime macros/matchit.vim |"                               Match pairs of keywords (Eg: def, end)
@@ -82,22 +84,6 @@ colorscheme dracula
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-
-" CtrlP
-let g:ctrlp_working_path_mode = 0 " Don't manage. Plays nicely with `bundle open <name>`
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|logs$\|tmp$\|source_maps$\|vendor/gems$\|vendor/bundle$',
-  \ 'file': '',
-  \ 'link': '',
-  \ }
-let g:ctrlp_buffer_func = { 'enter': 'CtrlPEnter' }                   " Kill buffers in CtrlP with <C-@>
-func! CtrlPEnter()                                                    " https://github.com/kien/ctrlp.vim/issues/280
-  nnoremap <buffer> <silent> <C-@> :call <sid>CtrlPDeleteBuffer()<CR>
-endfunc
-func! s:CtrlPDeleteBuffer()
-  exec "bd" fnamemodify(getline('.')[2:], ':p')
-  exec "norm \<F5>"
-endfunc
 
 " Speed
 set ttyfast
