@@ -1,6 +1,7 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dockyard/vim-easydir'
 Plug 'junegunn/vim-easy-align'
 Plug 'lmeijvogel/vim-yaml-helper'
@@ -73,6 +74,10 @@ set undodir=$HOME/.vim/undo " Where to save histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " Number of lines to save
 
+" Color
+set termguicolors
+colorscheme dracula
+
 " Ack
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -97,9 +102,6 @@ endfunc
 " Speed
 set ttyfast
 set lazyredraw
-
-" Color scheme
-colorscheme dracula
 
 " Save when focus is lost
 autocmd BufLeave,FocusLost * silent! wall
