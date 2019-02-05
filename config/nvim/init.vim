@@ -1,5 +1,5 @@
 " Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dockyard/vim-easydir'
 Plug 'junegunn/vim-easy-align'
