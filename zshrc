@@ -4,9 +4,5 @@ export ANDROID_HOME="$HOME/Library/Android/sdk/"
 export GOPATH="$HOME/Code/Go"
 export EDITOR=nvim
 
-# Completion
-autoload -U compinit
-compinit -i
-
 # Config
 for config_file ($HOME/.zsh/*.zsh) source $config_file
