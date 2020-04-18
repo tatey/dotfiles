@@ -2,6 +2,9 @@
 x_gateway_simulator.rb
 *~
 
+# asdf
+.tool-versions
+
 # Ruby
 .rvmrc
 .rbenv-gemsets
