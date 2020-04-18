@@ -10,6 +10,3 @@ compinit -i
 
 # Config
 for config_file ($HOME/.zsh/*.zsh) source $config_file
-
-# Direnv
-eval "$(direnv hook zsh)"
