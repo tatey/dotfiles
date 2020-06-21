@@ -2,15 +2,11 @@
 x_gateway_simulator.rb
 *~
 
-# asdf
-.tool-versions
+# Docker
+docker-compose.yml
 
-# Ruby
-.rvmrc
-.rbenv-gemsets
-.rbenv-vars
-.rbenv-version
-.ruby-version
+# Nix
+shell.nix
 
 # LaTeX
 *.aux
