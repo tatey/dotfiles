@@ -93,6 +93,9 @@ set lazyredraw
 " Save when focus is lost
 autocmd BufLeave,FocusLost * silent! wall
 
+" fzf
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " Ruby/YAML, 2 spaces
 autocmd BufRead,BufNewFile {*.prawn,Fastfile} set ft=ruby
 autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber setlocal ai sw=2 sts=2 et
