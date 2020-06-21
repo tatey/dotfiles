@@ -2,6 +2,9 @@
 x_gateway_simulator.rb
 *~
 
+# Overmind
+.overmind.env
+
 # Docker
 docker-compose.yml
 
