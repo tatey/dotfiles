@@ -8,9 +8,6 @@ x_gateway_simulator.rb
 # Docker
 docker-compose.yml
 
-# Nix
-shell.nix
-
 # LaTeX
 *.aux
 *.out
