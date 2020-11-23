@@ -1,5 +1,10 @@
-autoload -U compinit
-compinit -i
+# Brew shell completion
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
+autoload -Uz compinit
+compinit
 
 # fixme - the load process here seems a bit bizarre
 
