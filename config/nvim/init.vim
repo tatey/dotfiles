@@ -1,8 +1,8 @@
 " Plugins
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'dockyard/vim-easydir'
-Plug '/Users/Tate/.homebrew/opt/fzf'
+Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'machakann/vim-highlightedyank'
